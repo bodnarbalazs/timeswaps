@@ -47,7 +47,7 @@ function animateOpacity(item) {
     if (item.style.opacity<=1) {
         setTimeout(() => {
             animateOpacity(item);
-        }, 50);
+        }, 50); 
     }
     else{
         o=0;
