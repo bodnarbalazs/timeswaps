@@ -10,7 +10,7 @@ let uspTexts=[
     "Egy énektanár tanítványai könnyen el tudják cserélni időpontjaikat, a tanár beavatkozása nélkül.",
     "Egy fogorvos páciensei könnyen el tudják cserélni időpontjaikat, az orvos beavatkozása nélkül.",
     "Egy matek tanár tanítványai könnyen el tudják cserélni időpontjaikat, a tanár beavatkozása nélkül.",
-    "Egy belsépítész kliensei könnyen el tudják cserélni konzultációs időpontjaikat, a belsépítész beavatkozása nélkül.",
+    "Egy belsőépítész kliensei könnyen el tudják cserélni konzultációs időpontjaikat, a belsőépítész beavatkozása nélkül.",
     "Egy üzleti tanácsadó kliensei könnyen el tudják cserélni konzultációs időpontjaikat, a tanácsadó beavatkozása nélkül."
 ];
 function loadTitleH2(){
@@ -32,7 +32,7 @@ function changeUSPText(){
     $("#USP-advantage-div p")[0].innerHTML="&emsp;"+uspTexts[t];
 
     t++;
-    if (t>=uspTexts.length) {
+    if (t>=uspTexts.length-1) {
         t=0;
     }
     animateOpacity($("#USP-advantage-div p")[0]);
