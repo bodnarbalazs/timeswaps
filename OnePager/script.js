@@ -32,7 +32,7 @@ function changeUSPText(){
     $("#USP-advantage-div p")[0].innerHTML="&emsp;"+uspTexts[t];
 
     t++;
-    if (t>=uspTexts.length-1) {
+    if (t>=uspTexts.length) {
         t=0;
     }
     animateOpacity($("#USP-advantage-div p")[0]);
